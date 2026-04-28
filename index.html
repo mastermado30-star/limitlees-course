@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limitlees Academy</title>
+</head>
+<body>
+
+<h1>√ﬂ«œÌ„Ì… Limitlees</h1>
+
+<h2>ﬁÊ«⁄œ œŒÊ· «·ﬂÊ—” «·„Ã«‰Ì</h2>
+
+<ul>
+  <li> À»Ì  ﬁ‰«… «· ·ÌÃ—«„ Ê«· ›«⁄· ⁄·ÌÂ«</li>
+  <li>Õ÷Ê— «· œ—Ì»«  «·√Ê› ·«Ì‰</li>
+  <li>«·„Õ«›Ÿ«  «·„ «Õ…: «·ﬁ«Â—… - «·„‰’Ê—… - «·⁄«‘— „‰ —„÷«‰ - «·›ÌÊ„ - «·≈”ﬂ‰œ—Ì…</li>
+  <li>·«“„ »⁄œ ﬂ· ”Ì‘‰  ﬁÊ· «” ›œ  «ÌÂ</li>
+  <li>«·ﬂÊ—” „Ã«‰Ì ·ﬂ‰ «·≈Ìœ«⁄ ·Ìﬂ √‰ </li>
+  <li>·«“„  · “„ »ﬂ· ﬂ·„… »ÌﬁÊ·Â« «·ﬂÊ ‘</li>
+  <li>«·√Ê›·«Ì‰: ÌÊ„ «·«À‰Ì‰</li>
+  <li>«·√Ê‰·«Ì‰: ÌÊ„ «·Œ„Ì”</li>
+</ul>
+
+<h2>”Ã· ›Ì «·ﬂÊ—” «·„Ã«‰Ì</h2>
+
+<input id="name" placeholder="«·«”„ «·À·«ÀÌ"><br><br>
+<input id="gov" placeholder="«·„Õ«›Ÿ…"><br><br>
+<input id="age" placeholder="«·”‰"><br><br>
+<input id="exp" placeholder="Â·  ⁄·„   œ«Ê· ﬁ»· ﬂœ«ø"><br><br>
+
+<button onclick="sendWhatsApp()">«· Ê«’· ⁄·Ï Ê« ”«»</button>
+
+<script>
+function sendWhatsApp() {
+  const number = "201220030422";
+
+  const name = document.getElementById("name").value;
+  const gov = document.getElementById("gov").value;
+  const age = document.getElementById("age").value;
+  const exp = document.getElementById("exp").value;
+
+  const message =
+`„—Õ»« ﬂÊ ‘° √‰« Õ«»» √”Ã· ›Ì «·ﬂÊ—” «·„Ã«‰Ì
+
+«·«”„: ${name}
+«·„Õ«›Ÿ…: ${gov}
+«·”‰: ${age}
+«·Œ»—…: ${exp}`;
+
+  window.open(
+    `https://wa.me/${number}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
